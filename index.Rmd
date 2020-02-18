@@ -1,0 +1,98 @@
+---
+title: "Hippocampus project"
+output:
+  html_document: 
+    toc: true
+    toc_depth: 2 
+    toc_float: true
+---
+# Introduction {#introduction}
+Hello, World! This is an intro to the hippocampus project 
+
+## Starting with R studio
+debut du projet
+
+## Starting with Github
+le mettre en ligne pour collaboration
+
+you can add **bold text asterisc** with aste or two underscores __bold underscore__
+you can do *italics single asteri* ou _italics single undescore_
+Adding superscript ^withchapeauchinois^
+adding subscripts using the ~tilde~
+higlight that what you a writing is `code inline code using backtick`  
+
+Use strikethrough text ~~double~~ 
+
+if you're writing a lot of text 
+you might want to break it up. one enter ne marche pas 
+
+if you add two enters
+
+it will break up your sentence woop
+
+I want to link my text to the [Introduction section](#introduction)
+
+You can create a [link for Google](https://google.com)
+
+je reference le footnote 1 [^1].
+
+add footnotes comme ca text that appears
+
+[^1]: first footnote, you can put txt or lnks to reference. 
+
+## Lists
+
+ordered list take numbers, mettre un espace ici entre texte et liste:
+
+1. a 
+2. b
+3. c, I have two items, create sublist using 4 spaces
+    a. sub 1
+    b. sub 2
+
+* Item C aste creates bullet point
+* Item D 
+
+tasks that have been completed or not (creates on github a tickbox or not)
+- [ ]
+- [x]
+
+you can also link images ![caption of my image a duck](https://images.unsplash.com/photo-1459682687441-7761439a709d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1410&q=80)
+
+## Tables 
+
+ you can create tables using the upright dash | -
+
+| column header | another colums | 
+| ------------- | -------------- |
+| first row     | second row     |
+
+> greater than sign to create blocks
+
+used as reminder or block to make something stand out for the reader
+
+how would we highlight code? 
+
+inline code with `single backticks`
+if there is a lot of code to highlight three backticks
+```
+print ("hello, world!")
+```
+sees code but doesn't run it, to do so R chunk , crtl alt I
+
+```{r}
+print("hello, this is the hippocampus project")
+75 * 8
+```
+```{r}
+calcul <- 100/2
+print(calcul)
+```
+
+
+```{r}
+download.file(url="https://raw.githubusercontent.com/cambiotraining/reproducibility-training/master/data/gapminder_data.csv", destfile="data/gapminder_data.csv")
+```
+
+
+chunks you can give them meaningful names when you are on a chunk you can see the list (close to console), message= false chunk option
